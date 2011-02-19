@@ -1,0 +1,24 @@
+{
+  "name": 'js.class',
+  "version": 'edge',
+  "description": "Implementation of the core of Ruby's object system in JavaScript.",
+  "keywords": ['ruby', 'class'],
+  "homepage": "http://jsclass.jcoglan.com/",
+  "people": [
+    {
+      "name": "James Coglan",
+      "url": "http://jcoglan.com"
+    }
+  ],
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jcoglan/js.class"
+  },
+  "depedencies": {
+    "jake": "0.1.x",
+  },
+  "scripts": {
+    "install": "jake"
+  }
+}
