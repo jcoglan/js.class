@@ -17,6 +17,10 @@ JS.bind = function(method, object) {
 JS.extend = function(destination, source, overwrite) {
   if (!destination || !source) return destination;
   for (var field in source) {
+    if(typeof(destination[field]) === 'object') {
+      JS.extend(destination[field],source[field]);
+  		continue;
+	  }
     if (destination[field] === source[field]) continue;
     if (overwrite === false && destination.hasOwnProperty(field)) continue;
     destination[field] = source[field];
