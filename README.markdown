@@ -14,7 +14,8 @@ need Node.js and Ruby installed, then run:
 
     cd path/to/js.class
     npm install
-    bundle install
+    gem install bundler (might require sudo)
+    bundle install --path .bundle (might also require sudo)
     bundle exec jake
 
 This will build the project and create files in the `build` directory.
